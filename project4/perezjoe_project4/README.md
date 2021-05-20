@@ -1,0 +1,1 @@
+To run this program type in the terminal of the flip server "bash makefile".

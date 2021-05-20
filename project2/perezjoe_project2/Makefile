@@ -1,0 +1,13 @@
+#!/bin/bash
+# number of threads:
+for t in 1 2 4 8
+do
+	NUMTHREADS=$t
+	# number of subdivisions:
+	for s in 16 32 64 128 256 512 1024 2048 4096
+	do
+		NUMNODES=$s
+		g++ -DNUMNODES=$s -DNUMTHREADS=$t project2.cpp -o prog -lm -fopenmp
+		./prog
+	done
+done

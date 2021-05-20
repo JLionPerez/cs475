@@ -1,0 +1,1 @@
+To run the program "project3.cpp" use the command "g++ project3.cpp -o project3 -lm -fopenmp" on the flip server. This will create an executable "project3", type "./project3" to execute the program.
